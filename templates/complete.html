@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+</head>
+<body>
+<h1 id="tesseract">PyTesseract + pyttsx3</h1>
+<div id="page2">
+<div class="img_wrap">
+<img class="img" src="{{url_for('static',filename=img_name)}}">
+</div>
+<div class="inp_">
+<textarea value=fetch_data id="" cols="30" rows="10" class="inp">
+        {{ message }}
+</textarea><br><br>
+</div>
+</div>
+<br>
+<br>
+<form action="{{url_for('speak')}}" method="post">
+<button id="second_button">Speak</button>
+</form>
+
+<style>
+#page2{
+   
+    display: flex;
+    justify-content:space-evenly;
+    height: 650px;
+    flex-flow: row no-wrap;
+
+}
+
+.img_wrap{
+    
+
+}
+.img{
+    height: 100%;
+}
+.inp{
+
+    height: 100%;
+    width: 650px;
+
+}
+#tesseract{
+font-size:50px;
+text-align:center;
+
+}
+button:hover,
+button:focus {
+background: #f22f46;
+color: #fff;
+}
+button {
+font-size: 18px;
+font-weight: 200;
+padding: 1em;
+width: 200px;
+background: transparent;
+border: 4px solid #f22f46;
+border-radius: 4px;
+transition: all 0.4s ease 0s;
+cursor: pointer;
+color: #f22f46;
+margin-bottom: 2em;
+position: relative;
+left:42%;
+}
+button:hover,
+button:focus {
+background: #f22f46;
+color: #fff;
+}
+
+
+
+
+    </style>
+</body>
+</html>
