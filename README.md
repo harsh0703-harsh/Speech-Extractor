@@ -1,5 +1,5 @@
 # Speech Extractor
-#### Working: This web app made to extract words from images. by using Pytesseract Library. After the extraction of words, this app can speak those words without any break.
+#### Working: This web app made to extract words from images by using Pytesseract Library. After the extraction of words, this app can speak those words without any break.
 
 ## This project is based on python web app
 ## Framework: Flask
